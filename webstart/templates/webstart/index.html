@@ -1,0 +1,10 @@
+{% extends 'webstart/base.html' %}
+{% load static %}
+{% block content %}
+    <p>Hello world</p>
+    <img style = "width:100px" src = "{% static 'webstart/장고 migration 해결.jpg' %}" alt='개같은거'/>
+    <p>{{ current_date }}</p>
+    <p>{{ current_date|date:"Y년 m월 d일 H시 i분 s초" }}</p>
+
+    <a href = {% url 'select' %}>시작하기!!</a>
+{% endblock %}
